@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Saya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      scroll-behavior: smooth;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background-color: #000;
+}
+
+body.dark-mode .navbar a {
+  color: #fff;
+}
+
+body.dark-mode .navbar a:hover {
+  color: #ff4444;
+}
+
+body.dark-mode #home,
+body.dark-mode #gallery,
+body.dark-mode #about {
+  background-color: transparent;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a {
+  color: white;
+}
+
+body.dark-mode .social-links a {
+  color: white;
+}
+
+body.dark-mode .social-links a:hover {
+  color: #ff4444;
+}
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #202020;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      color: #ff0000;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 120px 30px 60px;
+    }
+
+    #home {
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #home h1 {
+      font-family: 'Arial';
+      font-size: 60px;
+      font-weight: bold;
+    }
+
+    #gallery {
+      background-color: transparent;
+    }
+
+    #gallery h2 {
+        font-size: 50px;
+        margin-bottom: 0px;
+        font-weight: bolder;
+        text-align: center;
+    }
+      
+    #gallery h3 {
+      font-size: 25px;
+      margin-bottom: 20px;
+      font-weight: bolder;
+      text-align: left;
+      padding-left: 276px;
+      padding-bottom: 18px;
+      padding-top: 50px;
+      text-shadow: #000;
+    }
+
+    .video-gallery-wrapper {
+       display: flex;
+       margin-bottom: 40px;
+       margin-top: 10px;
+       margin-left: 200px;
+    }
+    
+    .video-gallery {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 40px;
+       justify-content: flex-start; 
+       padding-left: 260px;
+    }
+
+    .video-gallery video {
+       width: 100%;
+       max-width: 400px;
+       height: auto;
+       border-radius: 50px;
+       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .video-gallery-wrapper-edits {
+       display: flex;
+       margin-bottom: 40px;
+       margin-top: 10px;
+       margin-left: 200px;
+    }
+
+    .video-gallery-edits {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 40px;
+       justify-content: flex-start; 
+       padding-left: 260px;
+    }
+
+    .video-gallery-edits video {
+       width: 100%;
+       max-width: 400px;
+       height: auto;
+       border-radius: 50px;
+       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    #about {
+      background-color: transparent;
+    }
+
+    #about h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    #about p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 20px;
+      font-size: 16px;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #ff0000;
+    }
+ 
+  </style>
+</head>
+<body>
+
+  <!-- MENU -->
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#about">About Me</a>
+  <button id="toggleMode" style="margin-left:auto; padding:6px 12px; cursor:pointer; background:#444; color:white; border:none; border-radius:6px;">
+    Mode: Dark
+  </button>
+</nav>
+
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <h1>Welcome to My Website</h1>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery">
+    <h2>My Gallery</h2>
+
+  <div class="video-gallery-wrapper-edits"></div>
+  <h3>Edits</h3>
+  <div class="video-gallery-edits">
+      <video controls><source src="Ramadan 1446 H - albani.mp4" type="video/mp4"></video>
+      <video controls><source src="Ribuan Memori - edit albani.mp4" type="video/mp4"></video>
+  </div>
+</div>
+
+
+    <div class="video-gallery-wrapper"></div>
+      <h3>Genshin Edits</h3>
+      <div class="video-gallery">
+        <video controls><source src="Navia edit - no way - genshin impact.mp4" type="video/mp4"></video>
+        <video controls><source src="clorinde-genshin-impact-edit.mp4" type="video/mp4"></video>
+        <video controls><source src="Navia-edit.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+
+    <div class="video-gallery-wrapper"></div>
+    <h3>Anime Edits</h3>
+      <div class="video-gallery">
+        <video controls><source src="Dari mata sakurajima x sakuta.mp4" type="video/mp4"></video>
+        <video controls><source src="Sakurajima mai edit - kids are born stars.mp4" type="video/mp4"></video>
+        <video controls><source src="Mikasa edit - the outsider.mp4" type="video/mp4"></video>
+        <video controls><source src="Arthur-edit-i-am-the-king.mp4" type="video/mp4"></video>
+        <video controls><source src="Mikaela better.mp4" type="video/mp4"></video>
+        <video controls><source src="Killua edit.mp4" type="video/mp4"></video>
+        <video controls><source src="Every Time u  leave - rem subaru.mp4" type="video/mp4"></video>
+        <video controls><source src="Goku Edit.mp4" type="video/mp4"></video>
+        <video controls><source src="Seishun Sakurajima x Sakuta - Close Your Eyes.mp4" type="video/mp4"></video>
+        <video controls><source src="Shinoa edit i am mess.mp4" type="video/mp4"></video>
+        <video controls><source src="seishun buta yarou edit.mp4" type="video/mp4"></video>
+        <video controls><source src="Lucy Carried Away Edit.mp4" type="video/mp4"></video>
+        <video controls><source src="ply date.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! My name is Ikrom :D  
+    I’m an 18-year-old boy who loves editing, design and bringing fun into everything I do!  
+    I've been into editing since the COVID era and it's been one of my biggest passions ever since.  
+    Whether it’s crafting visuals or playing with design ideas, I love making things look good and feel exciting.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/albani.sailan" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/share/16ZLfQqXVw/?mibextid=wwXIfr" target="_blank">Facebook</a>
+    </div>
+  </section>
+
+  <!-- SCRIPT UNTUK AUTO-PAUSE SEMUA VIDEO LAIN -->
+  <script>
+    const videos = document.querySelectorAll("video");
+    videos.forEach(video => {
+      video.addEventListener("play", () => {
+        videos.forEach(v => {
+          if (v !== video) v.pause();
+        });
+      });
+    });
+  </script>
+
+ <!-- Tambahkan JavaScript sebelum </body> -->
+<script>
+  const toggleBtn = document.getElementById("toggleMode");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    toggleBtn.textContent = isDark ? "Mode: Light" : "Mode: Dark";
+  });
+</script>
+
+
+
+</body>
+</html>
